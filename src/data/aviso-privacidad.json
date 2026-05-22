@@ -1,0 +1,66 @@
+{
+  "titulo": "Aviso de privacidad",
+  "ultimaActualizacion": "21 de mayo de 2026",
+  "nota": "Este documento es un borrador informativo. Se recomienda revisión por un abogado antes de publicar la versión definitiva.",
+  "secciones": [
+    {
+      "titulo": "1. Responsable del tratamiento",
+      "parrafos": [
+        "El responsable del tratamiento de sus datos personales es Roberto Colin, en representación de la marca comercial LINCO (en adelante, \"LINCO\"), con sitio web eventoslinco.com.",
+        "Para cualquier asunto relacionado con privacidad puede contactarnos en robertocolin19@gmail.com o al teléfono 55 6867 1815."
+      ]
+    },
+    {
+      "titulo": "2. Datos personales que recabamos",
+      "parrafos": [
+        "A través del formulario de contacto y cotización en este sitio podemos recabar: nombre, empresa (opcional), teléfono, ciudad del evento, fecha estimada del evento, servicios de interés, comentarios adicionales y, en su caso, el paquete de referencia seleccionado.",
+        "No solicitamos datos sensibles en el formulario. Si nos proporciona información adicional por WhatsApp, correo o teléfono, también podrá ser utilizada para fines comerciales relacionados con su solicitud."
+      ]
+    },
+    {
+      "titulo": "3. Finalidad del tratamiento",
+      "parrafos": [
+        "Utilizamos sus datos para: atender solicitudes de cotización, dar seguimiento comercial, coordinar la prestación de servicios de eventos, responder dudas y mantener comunicación relacionada con su evento.",
+        "No utilizamos sus datos para fines distintos a los descritos sin su consentimiento, salvo obligación legal."
+      ]
+    },
+    {
+      "titulo": "4. Transferencia y no venta de datos",
+      "parrafos": [
+        "LINCO no vende ni renta sus datos personales a terceros.",
+        "Podremos compartir información únicamente con proveedores o colaboradores necesarios para operar su evento (por ejemplo, logística o personal en sitio), bajo acuerdos de confidencialidad y solo en la medida requerida para el servicio contratado."
+      ]
+    },
+    {
+      "titulo": "5. Derechos ARCO",
+      "parrafos": [
+        "Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (derechos ARCO), así como a revocar su consentimiento cuando aplique.",
+        "Para ejercer estos derechos, envíe una solicitud a robertocolin19@gmail.com indicando su nombre, medio de contacto y el derecho que desea ejercer. Responderemos en un plazo razonable conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares."
+      ]
+    },
+    {
+      "titulo": "6. Medios de contacto",
+      "parrafos": [
+        "Responsable: Roberto Colin.",
+        "Correo: robertocolin19@gmail.com.",
+        "Teléfono / WhatsApp: 55 6867 1815.",
+        "Horario de atención: 9:00 a 21:00 hrs, todos los días."
+      ]
+    },
+    {
+      "titulo": "7. Cookies y analítica",
+      "parrafos": [
+        "Este sitio puede utilizar cookies técnicas necesarias para su funcionamiento.",
+        "Si se configura una herramienta de analítica (por ejemplo, Umami u otra solución open source), se recopilarán datos de uso agregados y anónimos o seudonimizados con fines estadísticos. La analítica solo se activa cuando existe configuración en el entorno de despliegue; sin ella, no se carga script de medición.",
+        "Puede configurar su navegador para limitar o bloquear cookies; algunas funciones del sitio podrían verse afectadas."
+      ]
+    },
+    {
+      "titulo": "8. Cambios y vigencia",
+      "parrafos": [
+        "LINCO puede actualizar este aviso para reflejar cambios legales o operativos. La fecha de última actualización se indica al inicio de este documento.",
+        "El uso continuado del sitio después de publicar cambios implica su conocimiento del aviso vigente."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "clientes": {
+    "titulo": "Empresas que han confiado en LINCO",
+    "usarLogos": false,
+    "textoAlternativo": "Más de 500 eventos corporativos y sociales realizados en México.",
+    "logos": []
+  },
+  "metricas": [
+    {
+      "id": "eventos",
+      "valor": 500,
+      "prefijo": "+",
+      "etiqueta": "Eventos realizados"
+    },
+    {
+      "id": "ciudades",
+      "valor": 10,
+      "prefijo": "+",
+      "etiqueta": "Ciudades atendidas"
+    },
+    {
+      "id": "respuesta",
+      "valor": 2,
+      "sufijo": " h",
+      "etiqueta": "Respuesta a cotización (hábiles)"
+    },
+    {
+      "id": "experiencia",
+      "valor": 15,
+      "prefijo": "+",
+      "sufijo": " años",
+      "etiqueta": "Experiencia en el mercado"
+    }
+  ],
+  "testimonios": [
+    {
+      "id": "1",
+      "publicado": false,
+      "nombre": "",
+      "cargo": "",
+      "empresa": "",
+      "cita": "",
+      "evento": "",
+      "ciudad": "",
+      "fecha": ""
+    },
+    {
+      "id": "2",
+      "publicado": false,
+      "nombre": "",
+      "cargo": "",
+      "empresa": "",
+      "cita": "",
+      "evento": "",
+      "ciudad": "",
+      "fecha": ""
+    },
+    {
+      "id": "3",
+      "publicado": false,
+      "nombre": "",
+      "cargo": "",
+      "empresa": "",
+      "cita": "",
+      "evento": "",
+      "ciudad": "",
+      "fecha": ""
+    }
+  ],
+  "testimoniosNota": "Testimonios pendientes de autorización por escrito del cliente."
+}

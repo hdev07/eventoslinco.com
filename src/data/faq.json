@@ -1,0 +1,56 @@
+{
+  "titulo": "Preguntas frecuentes",
+  "subtitulo": "Respuestas a las dudas más comunes antes de contratar.",
+  "items": [
+    {
+      "id": "tiempo-cotizacion",
+      "pregunta": "¿En cuánto tiempo me cotizan?",
+      "respuesta": "En menos de 2 horas hábiles, de lunes a viernes en horario de oficina. Fuera de ese horario, te respondemos al siguiente día hábil."
+    },
+    {
+      "id": "cfdi",
+      "pregunta": "¿Facturan con CFDI 4.0?",
+      "respuesta": "Sí. Necesitamos razón social, RFC, régimen fiscal y uso de CFDI para emitir tu factura."
+    },
+    {
+      "id": "respaldo-equipo",
+      "pregunta": "¿Qué pasa si falla un equipo durante el evento?",
+      "respuesta": "Llevamos equipo de respaldo en cada montaje. Si surge un incidente, el personal en sitio lo resuelve sin interrumpir tu evento."
+    },
+    {
+      "id": "seguro",
+      "pregunta": "¿Tienen seguro o fianza del equipo?",
+      "respuesta": "Operamos con equipo asegurado. Solicita a ventas el detalle de cobertura según el tipo y escala de tu evento."
+    },
+    {
+      "id": "cobertura",
+      "pregunta": "¿Operan en mi ciudad?",
+      "respuesta": "Tenemos cobertura en las principales ciudades de México (CDMX, Edomex, Monterrey, Querétaro, Veracruz, Guadalajara y más). Si tu ciudad no aparece en la lista, consúltanos: evaluamos disponibilidad."
+    },
+    {
+      "id": "anticipo",
+      "pregunta": "¿Cuándo cobran? ¿Hay anticipo?",
+      "respuesta": "La política de anticipo y saldo se define en tu cotización según fecha, ciudad y servicios. Ventas te lo detalla por escrito antes de confirmar."
+    },
+    {
+      "id": "apartado",
+      "pregunta": "¿Cuánto tiempo antes debo apartar la fecha?",
+      "respuesta": "Recomendamos 2 a 4 semanas de anticipación. Fechas muy demandadas pueden requerir más tiempo; sujeto a disponibilidad."
+    },
+    {
+      "id": "uniforme",
+      "pregunta": "¿El personal viene uniformado?",
+      "respuesta": "Sí. Nuestro personal acude con uniforme e identificación de LINCO."
+    },
+    {
+      "id": "paquete-medida",
+      "pregunta": "¿Se puede modificar el paquete?",
+      "respuesta": "Sí. Los paquetes son referencia; armamos la cotización a la medida de tu evento, invitados y sede."
+    },
+    {
+      "id": "venue",
+      "pregunta": "¿Trabajan en sedes propias o el cliente debe contratar el venue?",
+      "respuesta": "Llevamos la producción a tu sede (hotel, salón, corporativo, jardín, etc.). Si aún no tienes venue, podemos orientarte en opciones."
+    }
+  ]
+}

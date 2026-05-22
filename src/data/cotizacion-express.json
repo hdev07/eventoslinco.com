@@ -1,0 +1,11 @@
+{
+  "titulo": "Cotización express",
+  "subtitulo": "3 pasos · Sin compromiso · Respuesta el mismo día",
+  "tiposEvento": ["Corporativo", "Social", "Convención", "Otro"],
+  "rangosInvitados": [
+    { "valor": "menos-50", "etiqueta": "Menos de 50" },
+    { "valor": "50-150", "etiqueta": "50 – 150" },
+    { "valor": "150-300", "etiqueta": "150 – 300" },
+    { "valor": "300-mas", "etiqueta": "Más de 300" }
+  ]
+}

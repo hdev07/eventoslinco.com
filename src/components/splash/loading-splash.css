@@ -1,0 +1,354 @@
+body.splash-open {
+  overflow: hidden;
+}
+
+/*
+ * Jerarquía splash (por ancho de marca):
+ *   título LINCO (CuteFont) ≈ 3× tagline superior (Alice)
+ *   tagline superior ≈ 1.15× tagline inferior
+ * --brand-title-scale compensa que CuteFont se ve más pequeña a igual font-size.
+ */
+.splash-screen {
+  --brand-width: min(96vw, 40rem);
+  --brand-title-scale: 1.48;
+  --title-chars: 5;
+  --tagline-top-chars: 10;
+  --tagline-bottom-chars: 26;
+  --title-size: min(
+    calc(
+      ((var(--brand-width) - 2rem) / var(--title-chars)) * var(--brand-title-scale)
+    ),
+    min(82vw, 56svh)
+  );
+  --tagline-top-size: min(
+    calc((var(--brand-width) - 2.5rem) / var(--tagline-top-chars) * 0.9),
+    min(8vw, 6.5svh)
+  );
+  --tagline-bottom-size: min(
+    calc((var(--brand-width) - 2rem) / var(--tagline-bottom-chars) * 1.02),
+    min(5.25vw, 4.25svh)
+  );
+  --brand-gap: 1.8vh;
+  --tagline-top-spacing: 0.22em;
+  --tagline-bottom-spacing: 0.08em;
+  --wave-width: 100%;
+  --wave-height: 78vh;
+  --wave-gap: clamp(1px, 0.14vw, 2px);
+
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  min-height: 100svh;
+  overflow-x: clip;
+  overflow-y: hidden;
+  background: #000;
+  font-family: var(--font-sans);
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0)
+    env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+}
+
+.splash-screen__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.splash-screen__wave {
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding-inline: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(
+    ellipse 88% 72% at 52% 50%,
+    #000 28%,
+    rgba(0, 0, 0, 0.55) 68%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 88% 72% at 52% 50%,
+    #000 28%,
+    rgba(0, 0, 0, 0.55) 68%,
+    transparent 100%
+  );
+}
+
+.splash-wave {
+  display: flex;
+  align-items: center;
+  gap: var(--wave-gap);
+  width: var(--wave-width);
+  aspect-ratio: 3.15 / 1;
+  height: auto;
+  max-height: var(--wave-height);
+  margin-inline: auto;
+  filter: blur(0.4px);
+}
+
+.splash-wave__bar {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  max-width: none;
+  height: var(--base, 20%);
+  border-radius: 999px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #061020 4%,
+    #0f2d6e 14%,
+    #2563d4 32%,
+    #4da3ff 48%,
+    #8ec8ff 50%,
+    #4da3ff 52%,
+    #2563d4 68%,
+    #0f2d6e 86%,
+    #061020 96%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 8px rgba(77, 163, 255, 0.45),
+    0 0 18px rgba(37, 99, 212, 0.2);
+  transform: scaleY(var(--scale, 1));
+  transform-origin: center center;
+  filter: brightness(var(--glow, 0.9));
+}
+
+.splash-wave--static .splash-wave__bar {
+  transform: scaleY(1);
+}
+
+.splash-screen__brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--brand-gap);
+  width: var(--brand-width);
+  max-height: 92svh;
+  padding-inline: 2vw;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+
+.splash-screen__tagline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.15;
+  width: 100%;
+}
+
+.splash-screen__tagline--top {
+  font-size: var(--tagline-top-size);
+  letter-spacing: var(--tagline-top-spacing);
+  margin-bottom: 0.4vh;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  margin-inline: auto;
+  padding-inline: var(--tagline-top-spacing);
+  box-sizing: content-box;
+}
+
+.splash-screen__tagline--bottom {
+  font-size: var(--tagline-bottom-size);
+  letter-spacing: var(--tagline-bottom-spacing);
+  margin-top: 0.4vh;
+  line-height: 1.25;
+  padding-inline: 1vw;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.splash-screen__title {
+  font-family: var(--font-brand);
+  font-size: var(--title-size);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: 0.03em;
+  max-width: 100%;
+}
+
+.splash-screen__actions {
+  position: absolute;
+  bottom: max(3.25rem, calc(6vh + env(safe-area-inset-bottom, 0px)));
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.splash-screen__enter {
+  border: 1px solid rgba(0, 74, 173, 0.85);
+  border-radius: 999px;
+  background: rgba(0, 74, 173, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  padding: 0.55rem 1.5rem;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.splash-screen__enter:hover {
+  background: #004aad;
+  border-color: #004aad;
+}
+
+.splash-screen__enter:focus-visible {
+  outline: 2px solid #4da3ff;
+  outline-offset: 3px;
+}
+
+.splash-screen__progress {
+  position: absolute;
+  bottom: max(1.5rem, calc(3vh + env(safe-area-inset-bottom, 0px)));
+  left: 50%;
+  z-index: 1;
+  width: min(12rem, 50vw);
+  height: 2px;
+  transform: translateX(-50%);
+  background: rgba(30, 100, 220, 0.25);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.splash-screen__progress-bar {
+  height: 100%;
+  width: 35%;
+  background: linear-gradient(90deg, #1a4fa8, #3d8ef5, #1a4fa8);
+  border-radius: inherit;
+  animation: splash-progress 1.6s ease-in-out infinite;
+}
+
+@keyframes splash-progress {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .splash-screen {
+    --brand-title-scale: 1.44;
+    --brand-width: min(94vw, 36rem);
+    --brand-gap: 1.4vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .splash-screen {
+    --brand-title-scale: 1.52;
+    --brand-width: min(92vw, 100%);
+    --tagline-top-chars: 10.8;
+    --brand-gap: 1vh;
+    --tagline-top-spacing: 0.08em;
+    --tagline-bottom-spacing: 0.06em;
+    --wave-width: 100%;
+    --wave-height: auto;
+    --wave-gap: clamp(1px, 0.22vw, 2px);
+  }
+
+  .splash-screen__bg {
+    background-size: 100% auto;
+    background-position: center 48%;
+  }
+
+  .splash-wave {
+    width: 100%;
+    aspect-ratio: 3.2 / 1;
+    max-height: 44vh;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-screen {
+    --brand-title-scale: 1.56;
+    --brand-width: min(90vw, 100%);
+    --tagline-top-chars: 11.2;
+    --brand-gap: 0.7vh;
+    --tagline-top-spacing: 0.05em;
+    --tagline-bottom-spacing: 0.04em;
+  }
+}
+
+@media (max-width: 380px) {
+  .splash-screen {
+    --brand-title-scale: 1.58;
+    --brand-width: min(88vw, 100%);
+    --tagline-top-chars: 11.5;
+    --brand-gap: 0.5vh;
+    --tagline-top-spacing: 0.04em;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .splash-screen {
+    --brand-title-scale: 1.38;
+    --brand-width: min(70vw, 32rem);
+    --tagline-top-chars: 11;
+    --brand-gap: 0.5vh;
+    --tagline-top-spacing: 0.05em;
+    --tagline-bottom-spacing: 0.04em;
+    --wave-width: 100%;
+    --wave-height: 85vh;
+  }
+
+  .splash-wave {
+    width: 100%;
+    height: var(--wave-height);
+    max-height: 92vh;
+    aspect-ratio: auto;
+  }
+
+  .splash-screen__progress {
+    bottom: max(0.75rem, calc(2vh + env(safe-area-inset-bottom, 0px)));
+    width: min(10rem, 35vw);
+  }
+
+  .splash-screen__actions {
+    bottom: max(2.5rem, calc(4vh + env(safe-area-inset-bottom, 0px)));
+  }
+}
+
+@media (max-height: 640px) and (orientation: portrait) {
+  .splash-screen {
+    --brand-title-scale: 1.5;
+    --tagline-top-chars: 11;
+    --brand-gap: 0.6vh;
+    --tagline-top-spacing: 0.06em;
+    --wave-height: min(32vh, 28vw);
+  }
+
+  .splash-wave {
+    max-height: var(--wave-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-wave__bar {
+    transform: none;
+    filter: none;
+  }
+
+  .splash-screen__progress-bar {
+    animation-duration: 2.4s;
+  }
+}

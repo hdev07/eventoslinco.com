@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder evento corporativo">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#004aad"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="120" y="180" width="560" height="280" rx="12" fill="#111" stroke="#004aad" stroke-width="2" opacity="0.9"/>
+  <circle cx="400" cy="300" r="48" fill="#004aad" opacity="0.35"/>
+  <text x="400" y="480" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="22" opacity="0.7">Evento corporativo</text>
+</svg>

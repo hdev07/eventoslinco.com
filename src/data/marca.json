@@ -1,0 +1,53 @@
+{
+  "nombre": "LINCO",
+  "dominio": "eventoslinco.com",
+  "diferenciador": "Un solo proveedor para tu evento completo: audio, iluminación, mobiliario y personal profesional.",
+  "heroFrase": "Un solo proveedor para tu evento completo.",
+  "hero": {
+    "eyebrow": "Producción integral de eventos · México",
+    "titulo": "Tu evento completo, con un solo proveedor.",
+    "subtitulo": "Audio profesional, iluminación, mobiliario y personal capacitado. Cotización en menos de 2 horas hábiles.",
+    "ctaPrimario": "Cotizar mi evento",
+    "ctaSecundario": "Ver paquetes",
+    "microcopy": "Sin compromiso · Respuesta el mismo día · Cobertura nacional",
+    "beneficios": ["Un solo contacto", "Cobertura nacional", "Equipo + personal"]
+  },
+  "fiscal": {
+    "razonSocial": "LINCO (confirmar razón social con Roberto)",
+    "rfc": "Pendiente confirmar",
+    "operandoDesde": null
+  },
+  "pilares": [
+    {
+      "titulo": "Todo en un solo contacto",
+      "descripcion": "Sin coordinar múltiples proveedores."
+    },
+    {
+      "titulo": "Cobertura nacional",
+      "descripcion": "Operación en las principales ciudades de México."
+    },
+    {
+      "titulo": "Equipo + personal",
+      "descripcion": "No solo renta: meseros, MC y DJ con estándar profesional."
+    },
+    {
+      "titulo": "Corporativo y social",
+      "descripcion": "Convenciones, lanzamientos, bodas, XV años, etc."
+    },
+    {
+      "titulo": "Cotización personalizada",
+      "descripcion": "Sin precios públicos; asesoría según fecha, ciudad y escala."
+    }
+  ],
+  "nosotros": "LINCO es tu aliado para eventos en todo México. Rentamos audio profesional, iluminación, pantallas, mobiliario y brindamos el personal que tu celebración necesita. Operamos con foco en CDMX, Estado de México, Monterrey, Querétaro, Veracruz, Guadalajara y principales ciudades. Cuéntanos tu evento y armamos la solución a tu medida.",
+  "contacto": {
+    "responsable": "Roberto Colin",
+    "telefono": "55 6867 1815",
+    "email": "robertocolin19@gmail.com",
+    "horario": "9:00 a 21:00 hrs (todos los días)"
+  },
+  "colores": {
+    "fondo": "#000000",
+    "acento": "#004aad"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "siteUrl": "https://eventoslinco.com",
+  "ogImage": "/assets/logos/logo_white.png",
+  "keywords": "renta de audio, CDMX, Edomex, corporativo, LINCO, eventos, iluminación, pantalla LED, DJ eventos, renta mobiliario eventos",
+  "pages": {
+    "inicio": {
+      "title": "LINCO | Renta de audio y eventos corporativos CDMX, Edomex",
+      "description": "Renta de audio, iluminación, mobiliario y personal para eventos en CDMX, Edomex, Monterrey y México."
+    },
+    "servicios": {
+      "title": "Servicios para eventos | LINCO",
+      "description": "Audio, luces, pantalla gigante, mobiliario, meseros, MC y DJ. Cotiza sin compromiso."
+    },
+    "paquetes": {
+      "title": "Paquetes para eventos | LINCO",
+      "description": "Soluciones integrales para corporativos y celebraciones. Cotización personalizada."
+    },
+    "nosotros": {
+      "title": "Nosotros | LINCO",
+      "description": "Conoce LINCO: un solo proveedor para tu evento en todo México."
+    },
+    "galeria": {
+      "title": "Galería | LINCO",
+      "description": "Eventos y montajes realizados por LINCO."
+    },
+    "contacto": {
+      "title": "Contacto y cotización | LINCO",
+      "description": "Roberto Colin — WhatsApp 55 6867 1815. Horario 9:00 a 21:00."
+    },
+    "privacidad": {
+      "title": "Aviso de privacidad | LINCO",
+      "description": "Aviso de privacidad de LINCO. Conoce cómo tratamos tus datos personales."
+    },
+    "terminos": {
+      "title": "Términos y condiciones | LINCO",
+      "description": "Términos y condiciones de uso del sitio web eventoslinco.com."
+    }
+  }
+}

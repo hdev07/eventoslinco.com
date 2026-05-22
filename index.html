@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logos/logo_white.png" />
+    <link rel="apple-touch-icon" href="/assets/logos/logo_white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Renta de audio, iluminación, mobiliario y personal para eventos en CDMX, Edomex, Monterrey y México."
+    />
+    <meta
+      name="keywords"
+      content="renta de audio, CDMX, Edomex, corporativo, LINCO, eventos, iluminación, pantalla LED, DJ eventos, renta mobiliario eventos"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LINCO" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:image" content="https://eventoslinco.com/assets/logos/logo_white.png" />
+    <title>LINCO — Eventos</title>
+    <link rel="preload" href="/assets/fonts/AliceFont.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/assets/fonts/CuteFont.ttf" as="font" type="font/ttf" crossorigin />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+      }
+      #app {
+        min-height: 100dvh;
+        min-height: 100svh;
+        background: #000;
+      }
+      @font-face {
+        font-family: "Alice";
+        src: url("/assets/fonts/AliceFont.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "CuteFont";
+        src: url("/assets/fonts/CuteFont.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var shown = false;
+
+        function showBrand() {
+          if (shown) return;
+          shown = true;
+          root.classList.add("fonts-ready");
+        }
+
+        if (!document.fonts || !document.fonts.load) {
+          showBrand();
+          return;
+        }
+
+        Promise.all([
+          document.fonts.load('400 1em "Alice"'),
+          document.fonts.load('400 1em "CuteFont"'),
+        ])
+          .then(showBrand)
+          .catch(showBrand);
+
+        document.fonts.ready.then(showBrand);
+        setTimeout(showBrand, 1200);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

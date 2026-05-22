@@ -1,0 +1,39 @@
+{
+  "titulo": "¿Para quién es LINCO?",
+  "subtitulo": "Encuentra el perfil que más se parece a tu evento.",
+  "bloques": [
+    {
+      "id": "corporativo",
+      "icon": "Building2",
+      "titulo": "Marketing y eventos corporativos",
+      "lineas": [
+        "Convenciones, lanzamientos, kick-offs y ruedas de prensa.",
+        "Facturación CFDI, orden de compra y cumplimiento de tiempos."
+      ],
+      "enlace": "/paquetes?filtro=corporativo",
+      "enlaceTexto": "Ver paquetes corporativos"
+    },
+    {
+      "id": "social",
+      "icon": "Heart",
+      "titulo": "Wedding planners y eventos sociales",
+      "lineas": [
+        "Bodas, XV años y aniversarios.",
+        "Personal impecable, audio claro y luces que arman el ambiente."
+      ],
+      "enlace": "/paquetes?filtro=social",
+      "enlaceTexto": "Ver paquetes sociales"
+    },
+    {
+      "id": "agencias",
+      "icon": "Clapperboard",
+      "titulo": "Agencias y productoras",
+      "lineas": [
+        "Renta white-label con operadores certificados.",
+        "Backup de equipo y condiciones por volumen."
+      ],
+      "enlace": "/contacto",
+      "enlaceTexto": "Solicitar propuesta"
+    }
+  ]
+}

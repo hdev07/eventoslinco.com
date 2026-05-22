@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Corporativo Esencial",
+    "slug": "corporativo-esencial",
+    "paraQuien": "Reuniones, capacitaciones",
+    "asistentes": "20–80 asistentes",
+    "duracion": "Hasta 4 horas",
+    "escalaProduccion": "Producción ligera",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "Audio básico, 2 micrófonos, operador, montaje/desmontaje",
+    "descripcionCorta": "Audio claro y profesional para juntas y capacitaciones. Incluye micrófonos y operador."
+  },
+  {
+    "id": 2,
+    "nombre": "Corporativo Premium",
+    "slug": "corporativo-premium",
+    "paraQuien": "Convenciones, lanzamientos",
+    "asistentes": "80–250 asistentes",
+    "duracion": "Hasta 8 horas",
+    "escalaProduccion": "Producción estándar",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "Audio profesional, pantalla gigante, beam/wash, MC, meseros",
+    "descripcionCorta": "Experiencia completa para convenciones y lanzamientos: audio, pantalla, luces y personal."
+  },
+  {
+    "id": 3,
+    "nombre": "Social Celebración",
+    "slug": "social-celebracion",
+    "paraQuien": "Bodas, XV, aniversarios",
+    "asistentes": "50–300 asistentes",
+    "duracion": "Hasta 6 horas",
+    "escalaProduccion": "Producción estándar",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "Audio + DJ, iluminación, mobiliario, MC opcional",
+    "descripcionCorta": "Todo para tu celebración: música, ambiente, mobiliario y animación."
+  },
+  {
+    "id": 4,
+    "nombre": "Convención Integral",
+    "slug": "convencion-integral",
+    "paraQuien": "Eventos grandes",
+    "asistentes": "200–500+ asistentes",
+    "duracion": "Jornada completa",
+    "escalaProduccion": "Producción robusta",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "Audio escenario, LED, luces, personal de piso",
+    "descripcionCorta": "Solución de gran escala con coordinación dedicada de ventas."
+  },
+  {
+    "id": 5,
+    "nombre": "Mobiliario & Banquete",
+    "slug": "mobiliario-banquete",
+    "paraQuien": "Solo salón / banquete",
+    "asistentes": "30–200 asistentes",
+    "duracion": "Según tu banquete",
+    "escalaProduccion": "Producción ligera a estándar",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "Mesas, sillas, manteles, meseros",
+    "descripcionCorta": "Montaje impecable de salón con mobiliario y servicio de meseros."
+  },
+  {
+    "id": 6,
+    "nombre": "Personal & Animación",
+    "slug": "personal-animacion",
+    "paraQuien": "Quien ya tiene equipo",
+    "asistentes": "Cualquier escala",
+    "duracion": "Flexible",
+    "escalaProduccion": "Complemento / add-on",
+    "notaInversion": "Cotización exacta a medida",
+    "incluye": "MC, DJ, meseros; audio/luces como add-on",
+    "descripcionCorta": "MC, DJ y meseros profesionales; complementa tu producción existente."
+  }
+]

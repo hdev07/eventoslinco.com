@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder pantallas LED">
+  <defs>
+    <linearGradient id="bg-pantallas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#004aad"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-pantallas)"/>
+  <rect x="160" y="140" width="480" height="270" rx="8" fill="#111" stroke="#004aad" stroke-width="2"/>
+  <rect x="200" y="180" width="400" height="190" rx="4" fill="#004aad" opacity="0.25"/>
+  <rect x="320" y="430" width="160" height="12" rx="4" fill="#333"/>
+  <text x="400" y="520" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="22" opacity="0.7">Pantallas LED</text>
+</svg>

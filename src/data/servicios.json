@@ -1,0 +1,84 @@
+{
+  "categorias": [
+    {
+      "id": "audio-iluminacion",
+      "nombre": "Audio e iluminación",
+      "servicios": [
+        {
+          "nombre": "Renta de audio",
+          "slug": "renta-audio",
+          "descripcion": "Sistemas profesionales para interiores y exteriores."
+        },
+        {
+          "nombre": "Micrófonos",
+          "slug": "microfonos",
+          "descripcion": "Inalámbricos y de cable para voces y presentaciones."
+        },
+        {
+          "nombre": "Luces beam",
+          "slug": "luces-beam",
+          "descripcion": "Efectos de haz para escenario y pista."
+        },
+        {
+          "nombre": "Luces wash",
+          "slug": "luces-wash",
+          "descripcion": "Iluminación ambiental y de atmósfera."
+        },
+        {
+          "nombre": "Pantalla gigante",
+          "slug": "pantalla-gigante",
+          "descripcion": "Pantalla LED / proyección para presentaciones y shows."
+        }
+      ]
+    },
+    {
+      "id": "mobiliario",
+      "nombre": "Mobiliario",
+      "servicios": [
+        {
+          "nombre": "Mesas y sillas",
+          "slug": "mesas-sillas",
+          "descripcion": "Mobiliario para banquetes y eventos corporativos."
+        },
+        {
+          "nombre": "Manteles",
+          "slug": "manteles",
+          "descripcion": "Mantelería y montaje de mesas."
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "nombre": "Personal",
+      "servicios": [
+        {
+          "nombre": "Meseros",
+          "slug": "meseros",
+          "descripcion": "Personal de servicio para banquetes y cócteles."
+        },
+        {
+          "nombre": "Maestro de ceremonias",
+          "slug": "maestro-ceremonias",
+          "descripcion": "Conducción profesional de tu evento."
+        },
+        {
+          "nombre": "DJ",
+          "slug": "dj",
+          "descripcion": "Música y ambiente para celebraciones y corporativos."
+        }
+      ]
+    }
+  ],
+  "opcionesFormulario": [
+    "Renta de audio",
+    "Micrófonos",
+    "Luces beam",
+    "Luces wash",
+    "Pantalla gigante",
+    "Mesas y sillas",
+    "Manteles",
+    "Meseros",
+    "Maestro de ceremonias",
+    "DJ"
+  ]
+}

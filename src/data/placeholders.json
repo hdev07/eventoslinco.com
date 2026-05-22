@@ -1,0 +1,50 @@
+[
+  {
+    "id": "corporativo",
+    "alt": "Montaje corporativo — referencia de marca LINCO",
+    "src": "/images/placeholders/corporativo.svg",
+    "tema": "corporativo",
+    "icon": "Building2",
+    "etiqueta": "Evento corporativo"
+  },
+  {
+    "id": "audio",
+    "alt": "Audio profesional — referencia de marca LINCO",
+    "src": "/images/placeholders/audio.svg",
+    "tema": "audio",
+    "icon": "Headphones",
+    "etiqueta": "Audio profesional"
+  },
+  {
+    "id": "luces",
+    "alt": "Iluminación de escenario — referencia de marca LINCO",
+    "src": "/images/placeholders/luces.svg",
+    "tema": "luces",
+    "icon": "Lightbulb",
+    "etiqueta": "Iluminación"
+  },
+  {
+    "id": "banquete",
+    "alt": "Montaje de banquete — referencia de marca LINCO",
+    "src": "/images/placeholders/banquete.svg",
+    "tema": "banquete",
+    "icon": "UtensilsCrossed",
+    "etiqueta": "Banquete"
+  },
+  {
+    "id": "pantallas",
+    "alt": "Pantallas LED — referencia de marca LINCO",
+    "src": "/images/placeholders/pantallas.svg",
+    "tema": "pantallas",
+    "icon": "Monitor",
+    "etiqueta": "Pantallas LED"
+  },
+  {
+    "id": "personal",
+    "alt": "Personal de eventos — referencia de marca LINCO",
+    "src": "/images/placeholders/personal.svg",
+    "tema": "personal",
+    "icon": "Users",
+    "etiqueta": "Personal profesional"
+  }
+]

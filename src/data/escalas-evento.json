@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pequeno",
+    "etiqueta": "Eventos pequeños",
+    "rango": "Menos de 50 personas",
+    "produccion": "Producción ligera"
+  },
+  {
+    "id": "mediano",
+    "etiqueta": "Eventos medianos",
+    "rango": "50–200 personas",
+    "produccion": "Producción estándar"
+  },
+  {
+    "id": "grande",
+    "etiqueta": "Eventos grandes",
+    "rango": "200–500 personas",
+    "produccion": "Producción robusta"
+  },
+  {
+    "id": "masivo",
+    "etiqueta": "Eventos masivos",
+    "rango": "Más de 500 personas",
+    "produccion": "Producción a la medida"
+  }
+]

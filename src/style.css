@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Alice";
+  src: url("/assets/fonts/AliceFont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CuteFont";
+  src: url("/assets/fonts/CuteFont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-brand: #004aad;
+  --color-brand-dark: #003580;
+  --color-surface: #000000;
+  --color-surface-elevated: #0a0a0a;
+  --color-text: #ffffff;
+  --color-muted: #a3a3a3;
+  --font-sans: "Alice", Georgia, "Times New Roman", serif;
+  --font-display: "Alice", Georgia, "Times New Roman", serif;
+  --font-accent: "Alice", Georgia, "Times New Roman", serif;
+  --font-brand: "CuteFont", system-ui, sans-serif;
+}
+
+:root {
+  --color-brand: #004aad;
+  --color-brand-dark: #003580;
+  --color-surface: #000000;
+  --color-surface-elevated: #0a0a0a;
+  --color-text: #ffffff;
+  --color-muted: #a3a3a3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+}
+
+/*
+ * Escala tipográfica (ratio ~1.28)
+ * Eyebrow < lead < section-title < page-title < hero-title
+ * Alice tiene menor presencia óptica que Lastica; los tamaños compensan eso.
+ */
+:root {
+  --type-eyebrow: clamp(0.6875rem, 0.22vw + 0.625rem, 0.8125rem);
+  --type-lead: clamp(1rem, 0.28vw + 0.9rem, 1.1875rem);
+  --type-section-title: clamp(1.875rem, 2.35vw + 1rem, 2.75rem);
+  --type-page-title: clamp(2.125rem, 3.5vw + 1rem, 3.75rem);
+  --type-hero-title: clamp(2.375rem, 4.4vw + 1.125rem, 4.5rem);
+  /* CuteFont tiene menor cap-height: escalar para igualar Alice en la misma línea */
+  --font-brand-match-scale: 1.68;
+  --font-brand-match-scale-sm: 1.45;
+}
+
+.type-eyebrow {
+  font-family: var(--font-accent);
+  font-size: var(--type-eyebrow);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+/* LINCO (CuteFont) junto a texto Alice — misma altura visual */
+.type-eyebrow .font-brand,
+.font-brand-match {
+  font-family: var(--font-brand);
+  font-size: calc(1em * var(--font-brand-match-scale));
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: -0.07em;
+  text-transform: uppercase;
+}
+
+.text-sm .font-brand,
+.font-brand-match--sm {
+  font-size: calc(1em * var(--font-brand-match-scale-sm));
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: -0.05em;
+  text-transform: uppercase;
+}
+
+.type-eyebrow--inline-brand {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.32em;
+}
+
+.type-eyebrow--inline-brand .font-brand {
+  vertical-align: unset;
+}
+
+.type-section-title {
+  font-family: var(--font-display);
+  font-size: var(--type-section-title);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.type-page-title {
+  font-family: var(--font-display);
+  font-size: var(--type-page-title);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.type-hero-title {
+  font-family: var(--font-display);
+  font-size: var(--type-hero-title);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.type-lead {
+  font-size: var(--type-lead);
+  line-height: 1.6;
+}
+
+/* Espaciado y jerarquía (sección 8 — Diseño y UX) */
+.section-y {
+  padding-block: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-y {
+    padding-block: 5rem;
+  }
+}
+
+.container-page {
+  margin-inline: auto;
+  max-width: 72rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 1.5rem;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* Contraste AA: texto secundario sobre fondo oscuro */
+.text-muted {
+  color: #a3a3a3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

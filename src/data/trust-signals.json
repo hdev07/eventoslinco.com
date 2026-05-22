@@ -1,0 +1,35 @@
+{
+  "titulo": "Operamos con estándares corporativos",
+  "items": [
+    {
+      "icon": "Receipt",
+      "titulo": "Facturación CFDI 4.0",
+      "descripcion": "Razón social, RFC y uso de CFDI en cada factura."
+    },
+    {
+      "icon": "ShieldCheck",
+      "titulo": "Equipo asegurado",
+      "descripcion": "Equipo respaldado; confirmar póliza con ventas."
+    },
+    {
+      "icon": "Clock",
+      "titulo": "Respuesta rápida",
+      "descripcion": "Cotizaciones en menos de 2 horas hábiles."
+    },
+    {
+      "icon": "Package",
+      "titulo": "Equipo de respaldo",
+      "descripcion": "Llevamos redundancia en cada evento."
+    },
+    {
+      "icon": "CreditCard",
+      "titulo": "Formas de pago",
+      "descripcion": "Transferencia, tarjeta y orden de compra corporativa."
+    },
+    {
+      "icon": "BadgeCheck",
+      "titulo": "Personal identificado",
+      "descripcion": "Uniforme e identificación en sitio."
+    }
+  ]
+}
