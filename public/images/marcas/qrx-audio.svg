@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 270" role="img" aria-hidden="true">
+  <defs>
+    <filter id="white" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <image width="420" height="270" href="/images/marcas/examples/qrx-audio.png" filter="url(#white)" preserveAspectRatio="xMidYMid meet"/>
+</svg>

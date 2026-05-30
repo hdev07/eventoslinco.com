@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, shallowRef } from "vue";
 import { useSpectrumWave } from "@/composables/useSpectrumWave";
-import { useSplashFonts } from "@/composables/useSplashFonts";
-
-useSplashFonts();
 
 const waveRef = shallowRef<HTMLElement | null>(null);
 useSpectrumWave(waveRef);
-useSplashFonts();
 
 const props = withDefaults(
   defineProps<{
@@ -57,11 +53,14 @@ onUnmounted(() => {
     </div>
 
     <div class="splash-screen__brand">
-      <p class="splash-screen__tagline splash-screen__tagline--top">corporativo</p>
-      <h1 class="splash-screen__title">LINCO</h1>
-      <p class="splash-screen__tagline splash-screen__tagline--bottom">
-        professional audio rental
-      </p>
+      <img
+        class="splash-screen__logo"
+        src="/assets/logos/logo_without_bg_white.png"
+        alt="LINCO"
+        width="640"
+        height="320"
+        decoding="async"
+      />
     </div>
 
     <div class="splash-screen__actions">

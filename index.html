@@ -18,8 +18,13 @@
     <meta property="og:locale" content="es_MX" />
     <meta property="og:image" content="https://eventoslinco.com/assets/logos/logo_white.png" />
     <title>LINCO — Eventos</title>
-    <link rel="preload" href="/assets/fonts/AliceFont.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="/assets/fonts/CuteFont.ttf" as="font" type="font/ttf" crossorigin />
+    <link
+      rel="preload"
+      href="/assets/fonts/urbanist/urbanist-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <style>
       html,
       body {
@@ -33,18 +38,11 @@
         background: #000;
       }
       @font-face {
-        font-family: "Alice";
-        src: url("/assets/fonts/AliceFont.ttf") format("truetype");
-        font-weight: 400;
+        font-family: "Urbanist Variable";
         font-style: normal;
         font-display: swap;
-      }
-      @font-face {
-        font-family: "CuteFont";
-        src: url("/assets/fonts/CuteFont.ttf") format("truetype");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
+        font-weight: 100 900;
+        src: url("/assets/fonts/urbanist/urbanist-latin-wght-normal.woff2") format("woff2-variations");
       }
     </style>
     <script>
@@ -64,8 +62,8 @@
         }
 
         Promise.all([
-          document.fonts.load('400 1em "Alice"'),
-          document.fonts.load('400 1em "CuteFont"'),
+          document.fonts.load('400 1em "Urbanist Variable"'),
+          document.fonts.load('700 1em Gonero'),
         ])
           .then(showBrand)
           .catch(showBrand);

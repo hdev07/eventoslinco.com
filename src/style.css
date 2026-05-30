@@ -1,17 +1,28 @@
 @import "tailwindcss";
+@import "@fontsource-variable/urbanist/wght.css";
 
 @font-face {
-  font-family: "Alice";
-  src: url("/assets/fonts/AliceFont.ttf") format("truetype");
+  font-family: "Gonero";
+  src:
+    url("/assets/fonts/gonero/Gonero-Regular.woff2") format("woff2"),
+    url("/assets/fonts/gonero/Gonero-Regular.woff") format("woff"),
+    url("/assets/fonts/gonero/Gonero-Regular.ttf") format("truetype"),
+    url("/assets/fonts/gonero/Gonero-Regular.otf") format("opentype"),
+    url("/assets/fonts/gonero/Gonero.otf") format("opentype"),
+    url("/assets/fonts/gonero/Gonero.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CuteFont";
-  src: url("/assets/fonts/CuteFont.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Gonero";
+  src:
+    url("/assets/fonts/gonero/Gonero-Bold.woff2") format("woff2"),
+    url("/assets/fonts/gonero/Gonero-Bold.woff") format("woff"),
+    url("/assets/fonts/gonero/Gonero-Bold.ttf") format("truetype"),
+    url("/assets/fonts/gonero/Gonero-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -23,10 +34,10 @@
   --color-surface-elevated: #0a0a0a;
   --color-text: #ffffff;
   --color-muted: #a3a3a3;
-  --font-sans: "Alice", Georgia, "Times New Roman", serif;
-  --font-display: "Alice", Georgia, "Times New Roman", serif;
-  --font-accent: "Alice", Georgia, "Times New Roman", serif;
-  --font-brand: "CuteFont", system-ui, sans-serif;
+  --font-sans: "Urbanist Variable", Urbanist, system-ui, sans-serif;
+  --font-display: Gonero, "Urbanist Variable", Urbanist, system-ui, sans-serif;
+  --font-accent: "Urbanist Variable", Urbanist, system-ui, sans-serif;
+  --font-brand: Gonero, "Urbanist Variable", Urbanist, system-ui, sans-serif;
 }
 
 :root {
@@ -60,11 +71,14 @@ body {
   background-color: var(--color-surface);
   color: var(--color-text);
   font-family: var(--font-sans);
+  font-weight: 400;
   line-height: 1.5;
 }
 
 .font-display {
   font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .font-accent {
@@ -73,12 +87,13 @@ body {
 
 .font-brand {
   font-family: var(--font-brand);
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 /*
  * Escala tipográfica (ratio ~1.28)
  * Eyebrow < lead < section-title < page-title < hero-title
- * Alice tiene menor presencia óptica que Lastica; los tamaños compensan eso.
  */
 :root {
   --type-eyebrow: clamp(0.6875rem, 0.22vw + 0.625rem, 0.8125rem);
@@ -86,28 +101,27 @@ body {
   --type-section-title: clamp(1.875rem, 2.35vw + 1rem, 2.75rem);
   --type-page-title: clamp(2.125rem, 3.5vw + 1rem, 3.75rem);
   --type-hero-title: clamp(2.375rem, 4.4vw + 1.125rem, 4.5rem);
-  /* CuteFont tiene menor cap-height: escalar para igualar Alice en la misma línea */
-  --font-brand-match-scale: 1.68;
-  --font-brand-match-scale-sm: 1.45;
+  --font-brand-match-scale: 1.08;
+  --font-brand-match-scale-sm: 1.05;
 }
 
 .type-eyebrow {
   font-family: var(--font-accent);
   font-size: var(--type-eyebrow);
-  font-weight: 400;
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   line-height: 1.35;
   text-transform: uppercase;
 }
 
-/* LINCO (CuteFont) junto a texto Alice — misma altura visual */
+/* LINCO (Gonero) junto a texto Urbanist en eyebrow */
 .type-eyebrow .font-brand,
 .font-brand-match {
   font-family: var(--font-brand);
   font-size: calc(1em * var(--font-brand-match-scale));
   line-height: 1;
-  letter-spacing: 0.02em;
-  vertical-align: -0.07em;
+  letter-spacing: 0.06em;
+  vertical-align: -0.04em;
   text-transform: uppercase;
 }
 
@@ -115,8 +129,8 @@ body {
 .font-brand-match--sm {
   font-size: calc(1em * var(--font-brand-match-scale-sm));
   line-height: 1;
-  letter-spacing: 0.02em;
-  vertical-align: -0.05em;
+  letter-spacing: 0.05em;
+  vertical-align: -0.03em;
   text-transform: uppercase;
 }
 
@@ -134,29 +148,30 @@ body {
 .type-section-title {
   font-family: var(--font-display);
   font-size: var(--type-section-title);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.12;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .type-page-title {
   font-family: var(--font-display);
   font-size: var(--type-page-title);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 .type-hero-title {
   font-family: var(--font-display);
   font-size: var(--type-hero-title);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .type-lead {
   font-size: var(--type-lead);
+  font-weight: 400;
   line-height: 1.6;
 }
 

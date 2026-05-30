@@ -1,0 +1,44 @@
+{
+  "titulo": "Marcas con las que trabajamos",
+  "subtitulo": "Equipamiento profesional de audio, iluminación y DJ que utilizamos en nuestros montajes.",
+  "marcas": [
+    {
+      "id": "yamaha",
+      "nombre": "Yamaha",
+      "logo": "/images/marcas/yamaha.svg"
+    },
+    {
+      "id": "cympro-led",
+      "nombre": "Cympro LED",
+      "logo": "/images/marcas/examples/cymproled.png",
+      "raster": true
+    },
+    {
+      "id": "dbx-harman",
+      "nombre": "DBX by Harman",
+      "logo": "/images/marcas/examples/dbx.png",
+      "raster": true
+    },
+    {
+      "id": "pioneer",
+      "nombre": "Pioneer DJ",
+      "logo": "/images/marcas/pioneer-dj.svg"
+    },
+    {
+      "id": "alphatheta",
+      "nombre": "AlphaTheta",
+      "logo": "/images/marcas/alphatheta.svg"
+    },
+    {
+      "id": "qrx-audio",
+      "nombre": "QRX Audio",
+      "logo": "/images/marcas/examples/qrx-audio.png",
+      "raster": true
+    },
+    {
+      "id": "eighteen-sound",
+      "nombre": "EighteenSound",
+      "logo": "/images/marcas/eighteen-sound.svg"
+    }
+  ]
+}

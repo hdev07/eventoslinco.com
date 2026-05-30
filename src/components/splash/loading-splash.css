@@ -2,35 +2,8 @@ body.splash-open {
   overflow: hidden;
 }
 
-/*
- * Jerarquía splash (por ancho de marca):
- *   título LINCO (CuteFont) ≈ 3× tagline superior (Alice)
- *   tagline superior ≈ 1.15× tagline inferior
- * --brand-title-scale compensa que CuteFont se ve más pequeña a igual font-size.
- */
 .splash-screen {
-  --brand-width: min(96vw, 40rem);
-  --brand-title-scale: 1.48;
-  --title-chars: 5;
-  --tagline-top-chars: 10;
-  --tagline-bottom-chars: 26;
-  --title-size: min(
-    calc(
-      ((var(--brand-width) - 2rem) / var(--title-chars)) * var(--brand-title-scale)
-    ),
-    min(82vw, 56svh)
-  );
-  --tagline-top-size: min(
-    calc((var(--brand-width) - 2.5rem) / var(--tagline-top-chars) * 0.9),
-    min(8vw, 6.5svh)
-  );
-  --tagline-bottom-size: min(
-    calc((var(--brand-width) - 2rem) / var(--tagline-bottom-chars) * 1.02),
-    min(5.25vw, 4.25svh)
-  );
-  --brand-gap: 1.8vh;
-  --tagline-top-spacing: 0.22em;
-  --tagline-bottom-spacing: 0.08em;
+  --logo-width: min(88vw, 36rem);
   --wave-width: 100%;
   --wave-height: 78vh;
   --wave-gap: clamp(1px, 0.14vw, 2px);
@@ -131,55 +104,21 @@ body.splash-open {
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--brand-gap);
-  width: var(--brand-width);
+  width: var(--logo-width);
   max-height: 92svh;
   padding-inline: 2vw;
-  text-align: center;
-  color: #fff;
+  pointer-events: none;
   user-select: none;
 }
 
-.splash-screen__tagline {
-  font-family: var(--font-display);
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 1.15;
+.splash-screen__logo {
+  display: block;
   width: 100%;
-}
-
-.splash-screen__tagline--top {
-  font-size: var(--tagline-top-size);
-  letter-spacing: var(--tagline-top-spacing);
-  margin-bottom: 0.4vh;
-  width: max-content;
-  max-width: calc(100vw - 2rem);
-  margin-inline: auto;
-  padding-inline: var(--tagline-top-spacing);
-  box-sizing: content-box;
-}
-
-.splash-screen__tagline--bottom {
-  font-size: var(--tagline-bottom-size);
-  letter-spacing: var(--tagline-bottom-spacing);
-  margin-top: 0.4vh;
-  line-height: 1.25;
-  padding-inline: 1vw;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.splash-screen__title {
-  font-family: var(--font-brand);
-  font-size: var(--title-size);
-  font-weight: 400;
-  line-height: 0.88;
-  letter-spacing: 0.03em;
-  max-width: 100%;
+  height: auto;
+  max-height: min(56svh, 22rem);
+  object-fit: contain;
 }
 
 .splash-screen__actions {
@@ -246,20 +185,13 @@ body.splash-open {
 
 @media (max-width: 1024px) {
   .splash-screen {
-    --brand-title-scale: 1.44;
-    --brand-width: min(94vw, 36rem);
-    --brand-gap: 1.4vh;
+    --logo-width: min(90vw, 32rem);
   }
 }
 
 @media (max-width: 768px) {
   .splash-screen {
-    --brand-title-scale: 1.52;
-    --brand-width: min(92vw, 100%);
-    --tagline-top-chars: 10.8;
-    --brand-gap: 1vh;
-    --tagline-top-spacing: 0.08em;
-    --tagline-bottom-spacing: 0.06em;
+    --logo-width: min(88vw, 100%);
     --wave-width: 100%;
     --wave-height: auto;
     --wave-gap: clamp(1px, 0.22vw, 2px);
@@ -280,35 +212,29 @@ body.splash-open {
 
 @media (max-width: 480px) {
   .splash-screen {
-    --brand-title-scale: 1.56;
-    --brand-width: min(90vw, 100%);
-    --tagline-top-chars: 11.2;
-    --brand-gap: 0.7vh;
-    --tagline-top-spacing: 0.05em;
-    --tagline-bottom-spacing: 0.04em;
+    --logo-width: min(86vw, 100%);
+  }
+
+  .splash-screen__logo {
+    max-height: min(48svh, 18rem);
   }
 }
 
 @media (max-width: 380px) {
   .splash-screen {
-    --brand-title-scale: 1.58;
-    --brand-width: min(88vw, 100%);
-    --tagline-top-chars: 11.5;
-    --brand-gap: 0.5vh;
-    --tagline-top-spacing: 0.04em;
+    --logo-width: min(84vw, 100%);
   }
 }
 
 @media (max-height: 520px) and (orientation: landscape) {
   .splash-screen {
-    --brand-title-scale: 1.38;
-    --brand-width: min(70vw, 32rem);
-    --tagline-top-chars: 11;
-    --brand-gap: 0.5vh;
-    --tagline-top-spacing: 0.05em;
-    --tagline-bottom-spacing: 0.04em;
+    --logo-width: min(92vw, 100%);
     --wave-width: 100%;
     --wave-height: 85vh;
+  }
+
+  .splash-screen__logo {
+    max-height: min(72svh, 100%);
   }
 
   .splash-wave {
@@ -330,11 +256,12 @@ body.splash-open {
 
 @media (max-height: 640px) and (orientation: portrait) {
   .splash-screen {
-    --brand-title-scale: 1.5;
-    --tagline-top-chars: 11;
-    --brand-gap: 0.6vh;
-    --tagline-top-spacing: 0.06em;
+    --logo-width: min(84vw, 28rem);
     --wave-height: min(32vh, 28vw);
+  }
+
+  .splash-screen__logo {
+    max-height: min(40svh, 16rem);
   }
 
   .splash-wave {
