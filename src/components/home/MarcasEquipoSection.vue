@@ -34,7 +34,6 @@ const marcasList = marcas as MarcaEquipo[];
           v-for="marca in marcasList"
           :key="marca.id"
           class="marcas-equipo__item"
-          :class="{ 'marcas-equipo__item--tall': marca.id === 'eighteen-sound' || marca.id === 'cympro-led' }"
         >
           <img
             :src="marca.logo"
@@ -80,14 +79,15 @@ const marcasList = marcas as MarcaEquipo[];
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 3.5rem;
+  /* Caja uniforme: todos los logos se escalan dentro del mismo recuadro */
+  height: 4.5rem;
 }
 
 .marcas-equipo__logo {
   display: block;
-  width: auto;
-  max-width: 10rem;
-  height: 2.5rem;
+  width: 100%;
+  height: 100%;
+  max-width: 9rem;
   object-fit: contain;
   opacity: 0.78;
   transition: opacity 0.2s ease;
@@ -98,20 +98,18 @@ const marcasList = marcas as MarcaEquipo[];
   filter: brightness(0) invert(1);
 }
 
-.marcas-equipo__item--tall .marcas-equipo__logo {
-  height: 3.25rem;
-  max-width: 5.5rem;
-}
-
 .marcas-equipo__item:hover .marcas-equipo__logo,
 .marcas-equipo__item:focus-within .marcas-equipo__logo {
   opacity: 1;
 }
 
 @media (min-width: 768px) {
+  .marcas-equipo__item {
+    height: 5rem;
+  }
+
   .marcas-equipo__logo {
-    height: 2.5rem;
-    max-width: 10.5rem;
+    max-width: 10rem;
   }
 }
 </style>

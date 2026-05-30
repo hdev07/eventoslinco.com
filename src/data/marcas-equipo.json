@@ -10,14 +10,12 @@
     {
       "id": "cympro-led",
       "nombre": "Cympro LED",
-      "logo": "/images/marcas/examples/cymproled.png",
-      "raster": true
+      "logo": "/images/marcas/cympro-led.svg"
     },
     {
       "id": "dbx-harman",
       "nombre": "DBX by Harman",
-      "logo": "/images/marcas/examples/dbx.png",
-      "raster": true
+      "logo": "/images/marcas/dbx.svg"
     },
     {
       "id": "pioneer",
@@ -32,8 +30,7 @@
     {
       "id": "qrx-audio",
       "nombre": "QRX Audio",
-      "logo": "/images/marcas/examples/qrx-audio.png",
-      "raster": true
+      "logo": "/images/marcas/qrx-audio.svg"
     },
     {
       "id": "eighteen-sound",

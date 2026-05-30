@@ -7,6 +7,7 @@ import CoberturaSection from "@/components/home/CoberturaSection.vue";
 import CotizacionExpress from "@/components/home/CotizacionExpress.vue";
 import CtaSection from "@/components/home/CtaSection.vue";
 import DiferenciadorSection from "@/components/home/DiferenciadorSection.vue";
+import MarcasEquipoSection from "@/components/home/MarcasEquipoSection.vue";
 import HeroSection from "@/components/home/HeroSection.vue";
 import PaquetesTeaser from "@/components/home/PaquetesTeaser.vue";
 import ProcesoSection from "@/components/home/ProcesoSection.vue";
@@ -29,6 +30,7 @@ const seo = seoPages.pages.inicio;
     <ClientesLogos />
     <StatsCounter />
     <DiferenciadorSection />
+    <MarcasEquipoSection />
     <CotizacionExpress />
     <TrustSignals />
     <ServiciosTeaser />
